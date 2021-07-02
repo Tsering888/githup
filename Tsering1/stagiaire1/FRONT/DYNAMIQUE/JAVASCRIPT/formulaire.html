@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>formulaire</title>
+   <link rel="stylesheet" href="exo1.1.css">
+  
+</head>
+<body>
+  <fieldset>
+  
+    <h2>Vos coordonnées :</h2>
+    
+    <h4 style="color: crimson;">*Ces zones sont obligatoire pour envoyer le formilaire.</h4>
+    <div class="container">
+    <form name="myform" id="myform" action="http://bienvu.net/script.php" methode="POST">
+      <div class="parent" style="justify-content: flex-end;" ml-50px;>
+      <div class="row">
+          <label for="societé" class="col-4">  Societé :               </label> 
+          <input type="text" name="societé" id="societé" required >  <span class="text-danger"  class="col-4"  >* </span>
+          <span id="missSocieté" style="color: crimson;"></span><br> 
+      </div><br>
+      <div class="row">
+          <label for="person" class="col-4">Person à contacter :</label>
+          <input type="text" name="person" id="person"required><span class="text-danger">* </span> 
+      </div><br>
+        
+      <div class="row">
+         <label for="adresse" class="col-4"> Adresse de l'entreprise :</label>
+         <textarea id="adresse" name="textarea"> </textarea>
+      </div><br>
+
+      <div class="row">
+         <label for="cp" class="col-4">Code postal</label>
+         <input type="number" name="cp" id="cp"required><p style="color:red" style="font-weight: bolder;");>* </p> 
+      </div><br>
+
+      <div class="row">
+         <label for="ville" class="col-4">Ville :</label>
+         <input type="text" name="ville" id="ville"required><span class="text-danger">* </span> 
+      </div><br>
+     
+      <div class="row">
+         <label for="mail" class="col-4">Email :</label>
+         <input type="email" name="mail" id="mail"required><span class="text-danger">* </span> 
+      </div><br>
+           
+      <div class="row" >
+         <label for="tel" class="col-4">Téléphone :</label>
+         <input type="tel" name="tel" id="tel"required>
+      </div><br>
+      <div class="row">
+         <label for="text" class="col-4"> Sélectionnez <br>l'environment <br> technique du projet :</label>
+         <textarea id="text" name="textarea"> </textarea>
+      </div>
+        
+      <select id="choisisez">
+          
+          <option value="">Choisisez</option>
+          <option value="">Access</option>
+          <option value="">Java</option>
+          <option value="">Delphi</option>
+          <option value="">Windev</option>
+          <option value="">Visual basic</option>
+          <option value="">power buider</option>
+          <option value="">internet</option>
+    </select><br><br>
+
+    <div class="btn" style="align-items:  center;">
+        <input type="submit" value="envoyer" id="envoyer"  class="btn-primary">
+       <input type="submit" value="effacer" id="effacer"  class="btn-info">
+    </div>
+    
+  </div>
+  
+
+</form>
+</div>
+</fieldset>
+<script src="formulaire.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>  
